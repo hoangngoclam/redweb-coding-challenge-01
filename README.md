@@ -10,12 +10,21 @@ Your computer is installed with **nodejs**
 
 ## Installation
 **run install:** 
-```bash
+Use the package manager [npm](https://www.npmjs.com/) to install program.
+```
 $ npm install
 ```
 **run program:**
 ```bash
 $ npm run dev
+```
+**build program:**
+```bash
+$ npm run build
+```
+**Run program after build:**
+```bash
+$ npm start
 ```
 ## Folder contructor
 
@@ -48,6 +57,7 @@ Each item have 3 property:
  - **ArrayProfit:** Array data socksProfit 
  - **Target:** Target you want to test
  - **Expect:** The result you expect
+ 
 <br>
 ![Result of test](https://www.dropbox.com/s/o7qrjnku26lt7rf/redWebChallenge03.png?raw=1)
 If you enter number 2 in main menu of program you would show the result of test file like this
