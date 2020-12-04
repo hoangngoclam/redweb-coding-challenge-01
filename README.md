@@ -3,16 +3,6 @@ It's call Profit Targets
 A financial analyst is responsible for a portfolio of profitable stocks represented in an array. Each
 item in the array represents the yearly profit of a corresponding stock. The analyst gathers all
 distinct pairs of stocks that reached the target profit. Distinct pairs are pairs that differ in at least
-one element. Given the array of profits, find the number of distinct pairs of stocks where the sum
-of each pair's profits is exactly equal to the target profit.
-
-## require
-
-# challenge 01
-It's call Profit Targets
-A financial analyst is responsible for a portfolio of profitable stocks represented in an array. Each
-item in the array represents the yearly profit of a corresponding stock. The analyst gathers all
-distinct pairs of stocks that reached the target profit. Distinct pairs are pairs that differ in at least
 one element. Given the array of profits, find the number of distinct pairs of stocks where the sum of each pair's profits is exactly equal to the target profit.
 ## Require
 
@@ -49,6 +39,7 @@ This is menu when program is running
 ### **Enter 2 : when you want to run test in file**
 you can edit test file in **src/data/dataTest.json**. File will look like this
 ![Data of json test](https://www.dropbox.com/s/tzzw7kisrnuelyx/redWebChallengeimg02.png?raw=1)
+__
 Each item have 3 property: 
 
  - **ArrayProfit:** Array data socksProfit 
