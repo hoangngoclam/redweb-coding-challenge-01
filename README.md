@@ -1,4 +1,4 @@
-# challenge 01
+# Challenge 01
 It's call Profit Targets
 A financial analyst is responsible for a portfolio of profitable stocks represented in an array. Each
 item in the array represents the yearly profit of a corresponding stock. The analyst gathers all
