@@ -50,7 +50,6 @@ Each item have 3 property:
 If you enter number 2 in main menu of program you would show the result of test file like this
 <br>
 ![Result of test](https://www.dropbox.com/s/o7qrjnku26lt7rf/redWebChallenge03.png?raw=1)
-<br>
 ### **Enter 3 in menu to exit program**
 
 
