@@ -14,16 +14,16 @@ class Menu{
         console.log();
         console.log("==========[ Menu ]=============");
         console.log("===============================");
-        console.log("1. Nhập dữ liệu tay");
-        console.log("2. Test dữ liệu tự động từ file");
-        console.log("3. Thoát chương trình");
+        console.log("1. Input data manually");
+        console.log("2. Test data in file");
+        console.log("3. Exit program");
         console.log("===============================");
     }
     public async ChooseMenu():Promise<number>{
         let chooseNum:number;
         do {
             this.ShowMenu();
-            chooseNum = await Console.ReadLineNumber("Nhập vào lựa chọn của bạn: ");
+            chooseNum = await Console.ReadLineNumber("enter your choice: ");
         } while ( chooseNum > 0 && chooseNum > this.maxMenuNumber);
         return chooseNum;
     }
@@ -34,17 +34,17 @@ class Menu{
             chooseMenu = await this.ChooseMenu();
             switch(chooseMenu){
                 case 1:{
-                    let nNum:number = await Console.InputN("Nhập vào độ lớn của mảng StorksProfix: ");
+                    let nNum:number = await Console.InputN("Input n: StorksProfix[n]: ");
                     let arrayProfix1:number[] = [];
                     console.log("num:",nNum);
                     for (let i = 1; i <= nNum; i++) {
-                        let profitItem:number = await Console.InputStorkProfit(`Nhập phần tử thứ ${i}: `);
+                        let profitItem:number = await Console.InputStorkProfit(`Item [${i}]: `);
                         arrayProfix1.push(profitItem);
                     }
-                    let target:number = await Console.InputTarget("Nhập target bạn cần tính: ");
+                    let target:number = await Console.InputTarget("Input target: ");
                     let stocksProfit:StocksProfit = new StocksProfit(arrayProfix1,target);
                     let result:number[][] = stocksProfit.GetDistinctPairs();
-                    console.log("Kết quả tính toán được:"+ result.length)
+                    console.log("Result: "+ result.length)
                     console.log(result);
                     break;
                 }
@@ -64,13 +64,13 @@ class Menu{
                                 console.log(`=================[${index+1}]==================`);
                                 console.log(`StocksPocket[${element.ArrayProfit.length}]: [${element.ArrayProfit}]`);
                                 console.log(`Target: ${element.Target}`);
-                                console.log(`Kết quả mong đợi: ${element.Desire}`);
-                                console.log(`Tính toán`);
+                                console.log(`Expected results: ${element.Expect}`);
+                                console.log(`Caculate....`);
                                 let stocksProfitTest:StocksProfit = new StocksProfit(element.ArrayProfit,element.Target);
                                 let arrResult:number[][] = stocksProfitTest.GetDistinctPairs();
-                                console.log(`. Kết quả tính toán được: ${arrResult.length}`);
-                                console.log(`. Kết quả: ${arrResult.map(item=>`[${item[0]},${item[1]}]`)}`)
-                                console.log(`. Kết quả test: ${arrResult.length === element.Desire ? "Oke": "Fail"}`)
+                                console.log(`. Calculated results: ${arrResult.length}`);
+                                console.log(`. Result: ${arrResult.map(item=>`[${item[0]},${item[1]}]`)}`)
+                                console.log(`. Test ===> : ${arrResult.length === element.Expect ? "Oke": "Fail"}`)
                                 console.log("=====================================");
                             });
                     break;

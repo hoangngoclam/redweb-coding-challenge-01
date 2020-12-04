@@ -17,7 +17,7 @@ class Console{
     static async InputStorkProfit(question:string):Promise<number>{
         let result:number = 0;
         do {
-            console.log(`StorkProfit nhập vào phải là chữ số >= 0 và <= 10^9`)
+            console.log(`Item condition:  >= 0 và <= 10^9`)
             result = await this.ReadLineNumber(question);
         } while (result <= 0 || isNaN(result) || result >= Math.pow(10,9));
         return result;
@@ -26,7 +26,7 @@ class Console{
     static async InputN(question:string):Promise<number>{
         let result:number = 0;
         do {
-            console.log(`n nhập vào phải thảo điều kiện: 0 <= n <= (5*10^5)`)
+            console.log(`n input condition: 0 <= n <= (5*10^5)`)
             result = await this.ReadLineNumber(question);
         } while (result <= 0 || isNaN(result) || result >= 5 * Math.pow(10,5));
         return result;
@@ -35,7 +35,7 @@ class Console{
     static async InputTarget(question:string):Promise<number>{
         let result:number = 0;
         do {
-            console.log(`target nhập vào phải thỏa điều kiện: 0 <= n <= (5*10^9)`)
+            console.log(`target input condition: 0 <= target <= (5*10^9)`)
             result = await this.ReadLineNumber(question);
         } while (result <= 0 || isNaN(result) || result >= 5 * Math.pow(10,9));
         return result;
