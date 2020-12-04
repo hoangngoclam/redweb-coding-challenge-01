@@ -39,7 +39,7 @@ This is menu when program is running
 <br>
 ![This is result when running](https://www.dropbox.com/s/hadd495ili3vuea/redWebChallenge01.png?raw=1)
 <br>
-### **Enter 1 : when you want to enter data manually**
+### **Enter 1 : When you want to enter data manually**
 
  - Input n (n is number of stock profit you  want to put in array) with condition: 
 	1 <= **n** <= 5*10^5
@@ -47,7 +47,7 @@ This is menu when program is running
  - Enter each element into the array stocksProfit
  - Enter the target you want to calculate
 
-### **Enter 2 : when you want to run test in file**
+### **Enter 2 : When you want to run test in file**
 you can edit test file in **src/data/dataTest.json**. File will look like this
 <br>
 ![Data of json test](https://www.dropbox.com/s/ppmh9jlypsp4gn9/redWebChallenge02.png?raw=1)
@@ -58,8 +58,6 @@ Each item have 3 property:
  - **Target:** Target you want to test
  - **Expect:** The result you expect
  
+If you enter number 2 in main menu of program you would show the result of test file
 <br>
-![Result of test](https://www.dropbox.com/s/o7qrjnku26lt7rf/redWebChallenge03.png?raw=1)
-If you enter number 2 in main menu of program you would show the result of test file like this
-<br>
-### **Enter 3 in menu to exit program**
+### **Enter 3 : Exit program**
