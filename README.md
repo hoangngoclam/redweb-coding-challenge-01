@@ -58,6 +58,9 @@ If you enter number 2 in main menu of program you would show the result of test 
 ![Result of test](https://www.dropbox.com/s/3ke9v3rnqhqlg9m/redWebChallengeImg04.png?raw=1)
 ### **Enter 3 in menu to exit program**
 
+## Note:
+Because I write the program in Vietnamese so if you run with error font (utf-8) You should run it in visual code
+
 
 
 
