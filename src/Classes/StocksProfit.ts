@@ -1,4 +1,4 @@
-class StorksProfix{
+class StocksProfit{
     private arrayInput: number[] = [];
     private target:number = 0;
     constructor(array:number[],target:number){
@@ -25,7 +25,7 @@ class StorksProfix{
         }
         return false;
     }
-    public GetDistinctPairs():number[][]{ // 
+    public GetDistinctPairs():number[][]{ // stockPairs
         let result:number[][] = []
         let arrCombination:number[][] = [];
         this.arrayInput.forEach((item:number,index:number)=>{
@@ -41,4 +41,4 @@ class StorksProfix{
     }
 }
 
-export default StorksProfix
+export default StocksProfit
