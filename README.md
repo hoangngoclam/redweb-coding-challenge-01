@@ -42,6 +42,7 @@ This is menu when program is running
 you can edit test file in **src/data/dataTest.json**. File will look like this
 <br>
 ![Data of json test](https://www.dropbox.com/s/ppmh9jlypsp4gn9/redWebChallenge02.png?raw=1)
+<br>
 Each item have 3 property: 
 
  - **ArrayProfit:** Array data socksProfit 
