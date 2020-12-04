@@ -69,7 +69,7 @@ class Menu{
                                 let stocksProfitTest:StocksProfit = new StocksProfit(element.ArrayProfit,element.Target);
                                 let arrResult:number[][] = stocksProfitTest.GetDistinctPairs();
                                 console.log(`. Kết quả tính toán được: ${arrResult.length}`);
-                                console.log(`. Kết quả: ${arrResult}`)
+                                console.log(`. Kết quả: ${arrResult.map(item=>`[${item[0]},${item[1]}]`)}`)
                                 console.log(`. Kết quả test: ${arrResult.length === element.Desire ? "Oke": "Fail"}`)
                                 console.log("=====================================");
                             });
